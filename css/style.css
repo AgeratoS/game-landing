@@ -89,6 +89,7 @@ h1, h2, h3, h4, h5, h6, p
   border-radius: 4px;
   font-weight: bold;
   padding: 17px 16px 20px;
+  border: none;
 }
 
 .button:hover
@@ -138,6 +139,7 @@ h1, h2, h3, h4, h5, h6, p
 {
   width: 83.3%;
   margin: 0 auto;
+  max-width: 1200px;
 }
 
 /* SECTION#1 */
@@ -230,5 +232,146 @@ h1, h2, h3, h4, h5, h6, p
 .quotes
 {
   background:   url('../images/bg_5.png') no-repeat center left,
-                radial-gradient(70.52% 37.27% at 24.21% 47.47%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 51.1%, #080A0B 99.74%);
+                #080A0B;
+
+  padding-top: 160px;
+}
+
+.quotes__grid
+{
+  display: flex;
+  justify-content: space-between;
+}
+
+.quotes__description
+{
+  max-width: 40%;
+}
+
+.post
+{
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  position: relative;
+  padding: 14px 47px 21px 16px;
+  margin-bottom: 30px;
+}
+.post::before
+{
+  content: '';
+  position: absolute;
+  top: 30px;
+  right: 21px;
+  width: 18px;
+  height: 13px;
+  background: url('../images/twitter.svg') no-repeat center center;
+}
+
+.post__header
+{
+  display: flex;
+  margin-bottom: 26px;
+}
+
+.post__img
+{
+  max-width: 61px;
+  max-height: 61px;
+  margin-right: 30px;
+  position: relative;
+}
+
+.post__img img
+{
+  position: relative;
+  z-index: 3;
+  max-width: 100%;
+  border-radius: 30.5px;
+  display: inline-block;
+}
+.post__img::after
+{
+  content: '';
+  display: inline-block;
+  position: absolute;
+  left: 6px;
+  top: 1px;
+  width: 61px;
+  height: 61px;
+  border-radius: 30.5px;
+  background-color: #FFB548;
+}
+
+.author
+{
+  display: flex;
+  flex-direction: column;
+}
+
+.author__name
+{
+  font-size: 1.33rem;
+  color: #FFB548;
+  letter-spacing: 2px;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.author__status
+{
+  font-size: 1rem;
+  color: #FFFFFF;
+  opacity: 0.5;
+}
+.post__body
+{
+  color: #FFFFFF;
+  font-size: 1rem;
+  line-height: 1.38rem;
+  margin-bottom: 3px;
+}
+
+.post__date
+{
+  color: #FFFFFF;
+  opacity: 0.5;
+}
+
+
+.subscribe
+{
+  padding-left: 673px;
+  background-color: #1A1917;
+  padding-top: 220px;
+}
+
+.form__group
+{
+  display: flex;
+}
+
+.input
+{
+  position: relative;
+}
+
+.input__label
+{
+  position: absolute;
+  /* left: 21px;
+  top: 23px; */
+  left: 21px;
+  font-size: 0.778rem;
+  color: #FFFFFF;
+  opacity: 0.5;
+}
+
+.input__email
+{
+  padding: 26px 21px 10px;
+  font-size: 1rem;
+  color: #FFB548;
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: 5px;
+  outline: none;
+  border: none;
 }
