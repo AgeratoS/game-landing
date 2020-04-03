@@ -5,8 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Game Landing</title>
+  <!-- Подключаем дополнительные шрифты -->
+  <link rel="stylesheet" href="css/fonts.css">
   <!-- Подключаем стили -->
   <link rel="stylesheet" href="css/style.css">
+  <!-- Медиа-запросы -->
+  <link rel="stylesheet" href="css/media.css">
 </head>
 <body>
   <!-- page -->
@@ -28,23 +32,28 @@
     <!-- main -->
     <main class="main page__main">
       <!-- first section -->
-      <section class="section section_primary main__section">
+      <section class="section primary main__section">
         <div class="section__inner">
-          <h1 class="h1">Survive at all costs</h1>
-          <h3 class="h3">Experience new social battle royale game</h3>
 
-          <button class="button button_price">
-            <span class="button__product-name">Buy now on Steam</span>
-            <span class="button__product-price">$14.99</span>
-          </button>
+          <div class="section__box">
+            <h1 class="h1">Survive at all costs</h1>
+            <h3 class="h3">Experience new social battle royale game</h3>
 
-          <a href="#" class="anchor-story">The story</a>
+            <button class="button button_price">
+              <span class="button__product-name">Buy now on Steam</span>
+              <span class="button__product-price">$14.99</span>
+            </button>
+          </div>
+
+          <div class="anchor-story">
+            <a href="#" class="anchor-story__link">The story</a>
+          </div>
         </div>
       </section>
       <!-- end first section -->
 
       <!-- second section -->
-      <section class="section section_what-is-sos main__section">
+      <section class="section what-is-sos main__section">
         <div class="section__inner">
           <div class="section__title">
             <h2 class="h1">Social battle royale game</h1>
@@ -55,14 +64,81 @@
 
           <div class="section__description">
             <p class="p">Each round, <b class="b">you</b> and <b class="b">15</b> other contestants compete to
-escape a deadly island filled with monsters. The trick is: three people can survive. Will you run
+escape a deadly island filled with monsters. The trick is: <b class="b">three</b> people can survive. Will you run
 solo or form friendships with others to escape? </p>
             <p class="p">Making the right decisions could be the
 difference between <a class="link" href="#">life and death.</a></p>
           </div>
+
+
         </div>
       </section>
+
       <!-- end second section -->
+
+      <!-- third section -->
+      <section class="section features main__section">
+        <div class="section__inner">
+          <div class="section__title">
+            <h2 class="h1">Features</h2>
+            <h3 class="h3">What's so special?</h3>
+          </div>
+
+          <ul class="section__accordeon accordeon">
+            <li class="accordeon__item accordeon__item_active">
+              <span class="accordeon__title">Survive at all costs</span>
+              <div class="accordeon__description">You have 30 minutes to find a relic, signal for extraction, and grab
+one of three spots on the rescue chopper.</div>
+            </li>
+            <li class="accordeon__item">
+              <span class="accordeon__title">Create allies and enemies</span>
+              <div class="accordeon__description">You have 30 minutes to find a relic, signal for extraction, and grab
+one of three spots on the rescue chopper.</div>
+            </li>
+            <li class="accordeon__item">
+              <span class="accordeon__title">Impress the audience</span>
+              <div class="accordeon__description">You have 30 minutes to find a relic, signal for extraction, and grab
+one of three spots on the rescue chopper.</div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- end third section -->
+      <!-- fourth section -->
+      <section class="section requirements main__section">
+        <div class="section__inner">
+          <div class="section__title section__title_center">
+            <h2 class="h1">System requirements</h2>
+            <h3 class="h3">Can my computer run this game?</h3>
+
+            <!-- TODO: Придумать верстку -->
+            <div class="demands">
+
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end fourth section -->
+      <!-- fifth section -->
+      <section class="section quotes main__section">
+        <div class="section__inner">
+          <div class="quotes__grid">
+            <div class="quotes__description">
+              <div class="section__title">
+                <h2 class="h1">Press quotes</h2>
+                <h3 class="h3">What people think?</h3>
+              </div>
+
+              <p class="p">Our goal is to create a product and service that you’re satisfied with and use it every day. This is why we’re constantly working on our services to make it better every day and really listen to what our users has to say.</p>
+
+              <button class="button">
+                Read more testimonials
+              </button>
+            </div>
+            <div class="quotes__posts"></div>
+          </div>
+        </div>
+      </section>
     </main>
     <!-- end main -->
 
